@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+  </head>
+  <body>
+   <title> Three Cards</title>
+   <header id="header-title">Three Cards</header>
+    <div id="rules">
+     <h2 class="titles">Rules</h2>
+      <ul>
+         <li>Press Show to show the cards, this costs 50p each time</li>
+         <li>If you think the sum of your cards is higher than of the opponent cards, bet points and press High</li>
+         <li>If you think the sum of your cards is lower than of the opponent cards, bet points and press Low </li>
+         <li>Game is over when you lose all your points</li>
+      </ul>
+    </div>
+     
+     <div">
+         <h3 class="titles" id="points">Your Points: 500 </h3>
+     </div>
+         
+     <section id="card-table">
+      <div>
+        <span class="span-cards" id="your-cards"> Your Cards: </span>
+         <div class="div-cards">
+          <img src="https://freepikpsd.com/file/2019/10/playing-card-back-png-3-Transparent-Images.png" id="card1" width="100px"></img>
+          <img src="https://freepikpsd.com/file/2019/10/playing-card-back-png-3-Transparent-Images.png" id="card2" width="100px"></img>
+          <img src="https://freepikpsd.com/file/2019/10/playing-card-back-png-3-Transparent-Images.png" id="card3" width="100px"></img>   
+         </div>
+         
+      </div>
+      <div>
+        <span class="span-cards" id="opp-cards"> Opponent Cards: </span>
+         <div class="div-cards">
+          <img src="https://freepikpsd.com/file/2019/10/playing-card-back-png-3-Transparent-Images.png" id="card4" width="100px"></img>
+          <img src="https://freepikpsd.com/file/2019/10/playing-card-back-png-3-Transparent-Images.png" id="card5" width="100px"></img>
+          <img src="https://freepikpsd.com/file/2019/10/playing-card-back-png-3-Transparent-Images.png" id="card6" width="100px"></img>  
+         </div>
+         
+      </div>
+     </section>
+     
+    <button id="show-cards"> Show </button>
+    <input type="number" id="bet-points" value="100">
+    <button id="cards-compare-high"> High </button>
+    <button id="cards-compare-low"> Low </button>
+    
+    <div id="result">
+      <h3 class="titles" id="result">Result</h3>
+       <span id="win-or-lose"></span>
+    </div>
+    
+  
+   <script src="code.js"></script>
+  </body>
+ </html>
