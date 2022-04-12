@@ -23,8 +23,8 @@ function cardCompareHigh() {
     document.getElementById("card3").setAttribute('src', cards[2].image);
     document.getElementById("card6").setAttribute('src', cards[5].image);
    
-    yourCardsSum = Number(card1.value) + Number(card2.value) + Number(card3.value);
-    oppCardsSum = Number(card4.value) + Number(card5.value) + Number(card6.value);
+    yourCardsSum = Number(cards[0].value) + Number(cards[1].value) + Number(cards[2].value);
+    oppCardsSum = Number(cards[3].value) + Number(cards[4].value) + Number(cards[5].value);
     betPoints();
   
     if (yourCardsSum > oppCardsSum) {
@@ -40,8 +40,8 @@ function cardCompareLow() {
     document.getElementById("card3").setAttribute('src', cards[2].image); 
     document.getElementById("card6").setAttribute('src', cards[5].image);
    
-    yourCardsSum = Number(card1.value) + Number(card2.value) + Number(card3.value);
-    oppCardsSum = Number(card4.value) + Number(card5.value) + Number(card6.value);
+    yourCardsSum = Number(cards[0].value) + Number(cards[1].value) + Number(cards[2].value);
+    oppCardsSum = Number(cards[3].value) + Number(cards[4].value) + Number(cards[5].value);
     betPoints();
    
     if (yourCardsSum < oppCardsSum) {
